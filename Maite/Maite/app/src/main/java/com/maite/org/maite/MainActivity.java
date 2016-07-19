@@ -1,6 +1,7 @@
 package com.maite.org.maite;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txtclave, txtconfirmaclave;
     String pin1 = "";
     String pin2 = "";
-
+    SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        /******************
+         MaiteBD DatosBD = new MaiteBD(this, "maiteBD", null,1);
+
+         db = DatosBD.getWritableDatabase();
+         String[] args = new String[] {txtclave.getText().toString()};
+         Cursor c = db.rawQuery(" SELECT * FROM mt_pin WHERE nombre=? ", args);
+         if (c.moveToFirst()) {
+         //  textView.setText(""); // Vacio el textview
+         //Recorremos el cursor hasta que no haya m&aacute;s registros
+         do {
+         Integer codigo= c.getInt(0);
+         String nombre = c.getString(1);
+         String direccion = c.getString(2);
+         // textView.append("Codigo: " + codigo + " Nombre: " + nombre + " Direcci&oacute;n: " + direccion + "\n");
+         } while(c.moveToNext());
+         }
+
+
+
+         ***************/
     }
 
     private void savePin() {
