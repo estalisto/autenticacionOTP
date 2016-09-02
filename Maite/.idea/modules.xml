@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Maite.iml" filepath="$PROJECT_DIR$/Maite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AuthenticatorApp/AuthenticatorApp.iml" filepath="$PROJECT_DIR$/AuthenticatorApp/AuthenticatorApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OTP.iml" filepath="$PROJECT_DIR$/OTP.iml" />
     </modules>
   </component>
 </project>

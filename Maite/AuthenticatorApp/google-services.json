@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "67676735221",
+    "project_id": "maite-authenticator"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67676735221:android:1900bedf073d885f",
+        "android_client_info": {
+          "package_name": "com.google.android.apps.authenticator2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4cRIEQOxWo9mz4FZnRngEsq5GnDZZhoE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
